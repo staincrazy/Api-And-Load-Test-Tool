@@ -1,6 +1,8 @@
 .pytest_cahce
+__pycache__
+Data/__pycache__
 Data/auth_data.py
-Tests/LoadTests/auth.js
+
 
 # IDE Folders
 /.buildpath
