@@ -1,4 +1,43 @@
-# K6 Load Test Task Implementation
+## Python API Test Implementation
+
+### Description 
+Tests for Text API - Asynchronous, Text API - Synchronous and Image API
+are implemented using Python programming language, and its built-in modules (requests, grequests, unittest, etc)
+
+### Installation 
+
+In order to execute the tests you need to install Python3 on your machine, then navigate to root project folder and 
+execute the following command 
+
+```bash
+pip install requirements.txt
+```
+
+### Execution
+
+To execute tests from the root folder run the following command for one of presented test files
+
+```bash
+python3 -m unittest Tests/test_file_name.py
+```
+
+Example output will look like this 
+
+![img.png](example_api_test_output.png)
+
+### Details
+
+In order to see what each test is doing you may refer to separate tests name.
+For example, the following test verifies, that for request with proper data and api key for specified endpoint 
+should receive status code 200 OK
+
+```python
+def test_case_01__correct_creds_and_required_fields__code_200_(): pass
+```
+
+
+
+## K6 Load Test Task Implementation
 
 
 #### Task 
@@ -72,7 +111,7 @@ Example of test output:
 
 ### Example result
 
-![img.png](example_load_test_result.png)
+![img.png](example_load_test_output.png)
 
 
 
