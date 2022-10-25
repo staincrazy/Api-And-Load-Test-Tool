@@ -15,6 +15,16 @@ pip install requirements.txt
 
 ### Execution
 
+Before execution, you will need to add your api key in test classes. 
+Simply remove 'getApiKey()' function and replace it with your key in each Test Class
+
+```python
+ def setUp(self):
+        self._api_key = getApiKey()
+        self.endpoint_url = ImageApi.get_imageApi().endpoint
+        self.webhook_url = 'https://webhook.site/d284e774-acf8-41d9-865f-0e0a9a321afc'
+```
+
 To execute tests from the root folder run the following command for one of presented test files
 
 ```bash
