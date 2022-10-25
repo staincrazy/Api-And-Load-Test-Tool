@@ -1,0 +1,14 @@
+.pytest_cahce
+Data/auth_data.py
+Tests/LoadTests/auth.js
+
+# IDE Folders
+/.buildpath
+/.project
+/.settings
+/.idea
+/.vscode
+/.run
+
+# OS Folders
+.DS_Store
