@@ -35,8 +35,6 @@ should receive status code 200 OK
 def test_case_01__correct_creds_and_required_fields__code_200_(): pass
 ```
 
-
-
 ## K6 Load Test Task Implementation
 
 
@@ -56,7 +54,7 @@ brew install k6
 
 ### Execution
 
-Navigate to Tests/LoadTests directory, and replace <your_api_key> placeholder with the real API key for proper 
+Navigate to Tests/LoadTests directory, open load_test_script.js file, and replace <your_api_key> placeholder with the real API key for proper 
 authentication:
 
 ```javascript
