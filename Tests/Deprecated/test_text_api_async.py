@@ -4,7 +4,7 @@ from Adaptors.async_adaptors import AsyncRequestsAdapter as asyncRequests
 from Adaptors.sync_adaptors import SyncRequestsAdapter as syncRequests
 from Data.auth_data import getApiKey
 from Data.test_data import violations
-from Data.test_objects import TextAsyncAPi
+from Data.test_objects import CatFactsAsyncAPi
 from Utils.base_test_case import BaseTestCase
 
 
@@ -12,7 +12,7 @@ class TextApiAsyncTest(BaseTestCase):
 
     def setUp(self):
         self._api_key = getApiKey()
-        self.endpoint_url = TextAsyncAPi.get_textAsyncApi().endpoint
+        self.endpoint_url = CatFactsAsyncAPi.get_randomCatFact().endpoint
         self.webhook_url = 'https://webhook.site/d284e774-acf8-41d9-865f-0e0a9a321afc'
 
     def test_case_01__correct_creds_and_required_fields__code_200_(self):
