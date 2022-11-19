@@ -16,7 +16,7 @@ export let options = {
 
 
 export default function () {
-  const url = 'https://apis.activefence.com/sync/v2/content/text';
+  const url = '';
   const payload = {
       'text': testText[Math.floor(Math.random() * testText.length)],
     'content_id': Math.random()*1000,
