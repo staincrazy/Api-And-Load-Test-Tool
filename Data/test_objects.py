@@ -11,15 +11,4 @@ class CatFactsAsyncAPi(TestEndpoint):
         return instance
 
 
-class ImageApi(TestEndpoint):
-    @staticmethod
-    def get_imageApi():
-        instance = TestEndpoint('Image API', 'https://apis.activefence.com/v2/content/image')
-        return instance
 
-
-class TextSyncApi(TestEndpoint):
-    @staticmethod
-    def get_textSyncAPi():
-        instance = TestEndpoint('Text API - Synchronous', 'https://apis.activefence.com/sync/v2/content/text')
-        return instance
