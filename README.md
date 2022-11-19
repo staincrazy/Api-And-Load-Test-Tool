@@ -31,9 +31,6 @@ To execute tests from the root folder run the following command for one of prese
 python3 -m unittest Tests/test_file_name.py
 ```
 
-Example output will look like this 
-
-![img.png](example_api_test_output.png)
 
 ### Details
 
