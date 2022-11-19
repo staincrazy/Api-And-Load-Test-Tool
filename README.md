@@ -5,7 +5,7 @@
 ### Description 
 
 Tool for testing endpoints. At the moment implementation is based on free ones, that 
-does not require authorization. Auth tests coming soon.
+do not require authorization. Auth tests coming soon.
 
 ### Installation 
 
@@ -36,7 +36,7 @@ python -m unittest Tests/test_file_name.py
 ### Details
 
 In order to see what each test is doing you may refer to separate tests name.
-For example, the following test verifies, that for request with proper data and api key for specified endpoint 
+For example, the following test verifies, that for request with proper url and data for specified endpoint 
 should receive status code 200 OK
 
 ```python
@@ -48,7 +48,7 @@ def test__get_cat_facts_response_200(): pass
 
 ### --- IMPORTANT NOTE: --- 
 
-This test was a part of a challenge task, but no longer required. So for now test literally does 
+This test was a part of a challenge, but no longer required. So for now test literally does 
 nothing, but the purpose was to test specific endpoint, by sending random data sequence within specified time 
 period. So if your endpoint requires accepts similar AUTH type and data, you can use 
 it for your purposes.
@@ -56,7 +56,7 @@ it for your purposes.
 New implementation coming soon.
 ### --- IMPORTANT NOTE! ---
 
-As a part of this example challenge I used k6 open source tool for Mac
+As a part of this challenge I used k6 open source tool for Mac
 
 ```bash
 brew install k6
