@@ -3,8 +3,9 @@
 ## Python API Test Implementation
 
 ### Description 
-Tests for Text API - Asynchronous, Text API - Synchronous and Image API
-are implemented using Python programming language, and its built-in modules (requests, grequests, unittest, etc)
+
+Tool for testing endpoints. At the moment implementation is based on free ones, that 
+does not require authorization. Auth tests coming soon.
 
 ### Installation 
 
@@ -17,20 +18,18 @@ pip install requirements.txt
 
 ### Execution
 
-Before execution, you will need to add your api key in test classes. 
-Simply remove 'getApiKey()' function and replace it with your key in each Test Class
-
-```python
- def setUp(self):
-        self._api_key = getApiKey()
-        self.endpoint_url = ImageApi.get_imageApi().endpoint
-        self.webhook_url = 'https://webhook.site/d284e774-acf8-41d9-865f-0e0a9a321afc'
-```
 
 To execute tests from the root folder run the following command for one of presented test files
 
 ```bash
 python3 -m unittest Tests/test_file_name.py
+
+```
+(or if you're running under virtual env)
+
+```bash
+python -m unittest Tests/test_file_name.py
+
 ```
 
 
@@ -41,21 +40,23 @@ For example, the following test verifies, that for request with proper data and 
 should receive status code 200 OK
 
 ```python
-def test_case_01__correct_creds_and_required_fields__code_200_(): pass
+def test__get_cat_facts_response_200(): pass
 ```
 
-## K6 Load Test Task Implementation
+## K6 Load Test Challenge Implementation
 
 
-#### Task 
-```text 
-Implemet load test scenario on the “sync/v2/content/text” endpoint 
- - Load of exactly 5 req/sec
- - Donʼt use the same text over and over for the load test
- - Create a dataset that simulates the real world and use it as your input 
-```
+### --- IMPORTANT NOTE: --- 
 
-As a part of this example task I used k6 open source tool for Mac
+This test was a part of a challenge task, but no longer required. So for now test literally does 
+nothing, but the purpose was to test specific endpoint, by sending random data sequence within specified time 
+period. So if your endpoint requires accepts similar AUTH type and data, you can use 
+it for your purposes.
+
+New implementation coming soon.
+### --- IMPORTANT NOTE! ---
+
+As a part of this example challenge I used k6 open source tool for Mac
 
 ```bash
 brew install k6

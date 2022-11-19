@@ -1,12 +1,9 @@
 import http from 'k6/http';
 import {check} from 'k6';
 
-const testTitles = ['Harm', 'Bad', 'Good', 'Thanks', 'Money Waste', 'Too bad', 'Disgusting service',
-    'Never again'];
-const testDescriptions = ['This is too much for one test task', 'This description literally has no sense',
-'That is good.', 'Oh no, never again', 'Thanks', 'No, no, bad product']
-const testText = ['You are moron','Stupid shop with asshole service', 'Thanks for great delivery', 'Fire your courier',
-'This smartphone is total crap', 'Thanks for broken iPhone glass, bitches']
+const testTitles = ['Empty', 'Test', 'Titles'];
+const testDescriptions = ['Empty', 'Test', 'Description']
+const testText = ['Empty', 'test', 'texts']
 
 export let options = {
     vus: 5,
